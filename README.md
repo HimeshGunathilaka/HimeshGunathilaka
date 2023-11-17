@@ -4,6 +4,7 @@
 - 🔭 I’m currently working on [Proptilla](https://atp.cosmoforge.com/)
 
 - 🌱 I’m currently learning **Springboot**
+- 💫 I’m currently learning **React Native**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
