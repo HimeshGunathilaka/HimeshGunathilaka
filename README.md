@@ -4,7 +4,7 @@
 - 🔭 I’m currently working on [Proptilla](https://atp.cosmoforge.com/) , [Campy](https://play.google.com/store/apps/details?id=com.techgenie.campy&hl=en&gl=US)
 
 - 🌱 I’m currently learning **Springboot**
-- 💫 I’m currently learning **React Native**
+- 💫 I’m currently learning **React** / **Flutter**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
