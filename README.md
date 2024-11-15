@@ -131,7 +131,6 @@
 
 <div align="center">
   <img height="200" src="https://media.giphy.com/media/3o7TKE0xXyBS0KDIUo/giphy.gif?cid=ecf05e47kcs91kbpa3a8gul779nqdf74nyhz7bnejf6hrmx6&ep=v1_gifs_search&rid=giphy.gif&ct=g"  />
-</div>
 
 ###
 
