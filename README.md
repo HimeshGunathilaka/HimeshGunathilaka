@@ -130,7 +130,8 @@
 ###
 
 <div align="center">
-  <img height="200" src="https://media.giphy.com/media/3o7TKE0xXyBS0KDIUo/giphy.gif?cid=ecf05e47kcs91kbpa3a8gul779nqdf74nyhz7bnejf6hrmx6&ep=v1_gifs_search&rid=giphy.gif&ct=g"  />
+  <img height="200" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnVyejdiYWxlbmg3dHg0bHptOTZwY2JsbWl4NGpkNG81MjdiYXZpayZlcD12MV9naWZzX3NlYXJjaCZjdD1n/tIE1Po4CoWac/giphy.gif"  />
+</div>
 
 ###
 
