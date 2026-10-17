@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560" role="img" aria-labelledby="t d">
+  <title id="t">Himesh Gunathilake — Full Stack Engineer, exploring AI</title>
+  <desc id="d">A design-canvas style header: the name Himesh Gunathilake selected like a layer in a design tool over a slowly shifting aurora background, live cursors moving around it, and a glass properties panel listing role, stack, focus and what he is exploring.</desc>
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05060B"/>
+      <stop offset=".55" stop-color="#090C1A"/>
+      <stop offset="1" stop-color="#0E0A1C"/>
+    </linearGradient>
+    <radialGradient id="blue"><stop offset="0" stop-color="#0D99FF" stop-opacity=".6"/><stop offset=".45" stop-color="#0D99FF" stop-opacity=".18"/><stop offset="1" stop-color="#0D99FF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="violet"><stop offset="0" stop-color="#A259FF" stop-opacity=".55"/><stop offset=".45" stop-color="#A259FF" stop-opacity=".16"/><stop offset="1" stop-color="#A259FF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="pink"><stop offset="0" stop-color="#FF4D8D" stop-opacity=".36"/><stop offset=".5" stop-color="#FF4D8D" stop-opacity=".1"/><stop offset="1" stop-color="#FF4D8D" stop-opacity="0"/></radialGradient>
+    <radialGradient id="mint"><stop offset="0" stop-color="#3DDC97" stop-opacity=".24"/><stop offset=".5" stop-color="#3DDC97" stop-opacity=".07"/><stop offset="1" stop-color="#3DDC97" stop-opacity="0"/></radialGradient>
+    <radialGradient id="indigo"><stop offset="0" stop-color="#5B5BFF" stop-opacity=".22"/><stop offset="1" stop-color="#5B5BFF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="vignette" cx="40%" cy="45%" r="75%">
+      <stop offset=".6" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity=".55"/>
+    </radialGradient>
+    <radialGradient id="gridfade" cx="32%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="gridmask"><rect width="1200" height="560" fill="url(#gridfade)"/></mask>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.1" fill="#FFFFFF" fill-opacity=".09"/>
+    </pattern>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.4 -.62"/>
+    </filter>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".28"/>
+      <stop offset=".35" stop-color="#FFFFFF" stop-opacity=".06"/>
+      <stop offset=".7" stop-color="#FFFFFF" stop-opacity=".04"/>
+      <stop offset="1" stop-color="#A259FF" stop-opacity=".35"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#151827" stop-opacity=".78"/>
+      <stop offset="1" stop-color="#0A0C14" stop-opacity=".66"/>
+    </linearGradient>
+    <linearGradient id="glassedge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".12"/>
+    </linearGradient>
+    <linearGradient id="namegrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#C9D2E8"/>
+    </linearGradient>
+    <linearGradient id="serifgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8FD0FF"/>
+      <stop offset=".5" stop-color="#C9A6FF"/>
+      <stop offset="1" stop-color="#FF9CC2"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="560" rx="28"/></clipPath>
+    <style>
+      /*@fonts*/
+      .g4 { font-family: Geist, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 400; }
+      .g5 { font-family: Geist, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 500; }
+      .g7 { font-family: Geist, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 700; }
+      .g8 { font-family: Geist, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 800; }
+      .mono { font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 400; }
+      .serif { font-family: "Instrument Serif", "Iowan Old Style", Georgia, serif; font-style: italic; font-weight: 400; }
+
+      /* aurora drift */
+      .b1 { animation: d1 18s ease-in-out infinite alternate; }
+      .b2 { animation: d2 22s ease-in-out infinite alternate; }
+      .b3 { animation: d3 20s ease-in-out infinite alternate; }
+      .b4 { animation: d4 16s ease-in-out infinite alternate; }
+      .b5 { animation: d5 24s ease-in-out infinite alternate; }
+      @keyframes d1 { to { transform: translate(-160px, 70px) } }
+      @keyframes d2 { to { transform: translate(-120px, -110px) } }
+      @keyframes d3 { to { transform: translate(180px, -60px) } }
+      @keyframes d4 { to { transform: translate(160px, 50px) } }
+      @keyframes d5 { to { transform: translate(-140px, 40px) } }
+
+      /* selection draws in; resting state is fully visible */
+      .sel { stroke-dasharray: 1800; animation: draw 1.4s .3s cubic-bezier(.2,.8,.2,1) backwards; }
+      @keyframes draw { from { stroke-dashoffset: 1800 } }
+      .handle, .dim { transform-box: fill-box; transform-origin: center; animation: pop .45s cubic-bezier(.2,.8,.2,1) backwards; }
+      .h1 { animation-delay: 1.2s } .h2 { animation-delay: 1.3s } .h3 { animation-delay: 1.4s } .h4 { animation-delay: 1.5s } .dim { animation-delay: 1.7s }
+      @keyframes pop { from { opacity: 0; transform: scale(.4) } }
+
+      /* rotating "now" line */
+      .r { opacity: 0; animation: cycle 16s infinite both; }
+      .r1 { opacity: 1; }
+      .r2 { animation-delay: 4s } .r3 { animation-delay: 8s } .r4 { animation-delay: 12s }
+      @keyframes cycle {
+        0%   { opacity: 0; transform: translateY(10px) }
+        3%   { opacity: 1; transform: translateY(0) }
+        22%  { opacity: 1; transform: translateY(0) }
+        25%  { opacity: 0; transform: translateY(-10px) }
+        100% { opacity: 0; transform: translateY(-10px) }
+      }
+
+      /* multiplayer cursors */
+      .cur-a { transform: translate(708px, 362px); animation: travelA 11s infinite; animation-timing-function: cubic-bezier(.65,0,.35,1); }
+      @keyframes travelA {
+        0%, 6%    { transform: translate(740px, 494px) }
+        24%, 38%  { transform: translate(708px, 362px) }
+        56%, 66%  { transform: translate(1062px, 292px) }
+        84%, 100% { transform: translate(740px, 494px) }
+      }
+      .click { opacity: 0; transform-box: fill-box; transform-origin: center; animation: ring 11s infinite; }
+      @keyframes ring {
+        0%, 25% { opacity: 0; transform: scale(.2) }
+        27%     { opacity: .9; transform: scale(.6) }
+        34%     { opacity: 0; transform: scale(1.6) }
+        100%    { opacity: 0; transform: scale(1.6) }
+      }
+      .cur-b { transform: translate(600px, 52px); animation: travelB 9s infinite alternate; animation-timing-function: cubic-bezier(.45,0,.55,1); }
+      @keyframes travelB {
+        0%   { transform: translate(540px, 50px) }
+        50%  { transform: translate(690px, 62px) }
+        100% { transform: translate(620px, 40px) }
+      }
+      .live { animation: live 2.4s ease-in-out infinite; }
+      @keyframes live { 50% { opacity: .35 } }
+
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <!-- background: base gradient, drifting aurora, masked dot grid, grain, vignette -->
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="560" fill="url(#base)"/>
+    <circle class="b1" cx="1010" cy="40"  r="420" fill="url(#blue)"/>
+    <circle class="b2" cx="1180" cy="560" r="380" fill="url(#violet)"/>
+    <circle class="b3" cx="40"   cy="640" r="420" fill="url(#pink)"/>
+    <circle class="b4" cx="420"  cy="-90" r="340" fill="url(#mint)"/>
+    <circle class="b5" cx="760"  cy="330" r="300" fill="url(#indigo)"/>
+    <rect width="1200" height="560" fill="url(#dots)" mask="url(#gridmask)"/>
+    <rect width="1200" height="560" filter="url(#grain)" opacity=".22"/>
+    <rect width="1200" height="560" fill="url(#vignette)"/>
+  </g>
+  <rect x=".75" y=".75" width="1198.5" height="558.5" rx="27.5" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+
+  <!-- canvas chrome -->
+  <g class="mono" font-size="15" fill="#7A8197">
+    <text x="48" y="54"><tspan fill="#0D99FF">#</tspan> hero.tsx <tspan fill="#3A3F4E">—</tspan> 1200 × 560</text>
+    <text x="1152" y="54" text-anchor="end"><tspan class="live" fill="#3DDC97">●</tspan> Sri Lanka · UTC+05:30</text>
+  </g>
+
+  <!-- kicker -->
+  <text x="80" y="128" class="mono" font-size="22" fill="#6B7184">&lt;<tspan fill="#4DB5FF">FullStackEngineer</tspan> <tspan fill="#C09BFF">curious</tspan>=<tspan fill="#5BE3A8">"AI"</tspan> /&gt;</text>
+
+  <!-- name, selected like a layer -->
+  <text x="78" y="236" class="g8" font-size="120" letter-spacing="-4" fill="url(#namegrad)">Himesh</text>
+  <text x="82" y="344" class="serif" font-size="134" letter-spacing="-1" fill="url(#serifgrad)">Gunathilake</text>
+  <rect class="sel" x="64" y="136" width="644" height="226" fill="none" stroke="#0D99FF" stroke-width="1.5"/>
+  <g fill="#FFFFFF" stroke="#0D99FF" stroke-width="1.5">
+    <rect class="handle h1" x="59" y="131" width="10" height="10"/>
+    <rect class="handle h2" x="703" y="131" width="10" height="10"/>
+    <rect class="handle h3" x="703" y="357" width="10" height="10"/>
+    <rect class="handle h4" x="59" y="357" width="10" height="10"/>
+  </g>
+  <g class="dim">
+    <rect x="340" y="374" width="92" height="24" rx="5" fill="#0D99FF"/>
+    <text x="386" y="391" class="mono" font-size="13" fill="#FFFFFF" text-anchor="middle">644 × 226</text>
+  </g>
+
+  <!-- tagline -->
+  <g class="g4" font-size="25" fill="#A3A9BA">
+    <text x="80" y="446">I build products end to end — from the <tspan class="serif" font-size="31" fill="#FFFFFF">database</tspan> to the <tspan class="serif" font-size="31" fill="#FFFFFF">pixel</tspan>,</text>
+    <text x="80" y="480">and I’m exploring what <tspan class="serif" font-size="31" fill="#FFFFFF">AI</tspan> changes about how we build.</text>
+  </g>
+
+  <!-- rotating "now" -->
+  <g class="mono" font-size="17">
+    <text x="80" y="524" fill="#6B7184">▸ now:</text>
+    <g fill="#5BE3A8">
+      <text class="r r1" x="150" y="524">leading mobile delivery on Scolaris GO</text>
+      <text class="r r2" x="150" y="524">building a native macOS system analyzer</text>
+      <text class="r r3" x="150" y="524">mapping trail hazards with MapLibre + PostGIS</text>
+      <text class="r r4" x="150" y="524">exploring AI-assisted engineering workflows</text>
+    </g>
+  </g>
+
+  <!-- glass properties panel -->
+  <g>
+    <rect x="880" y="136" width="272" height="344" rx="18" fill="url(#glass)"/>
+    <rect x="880.5" y="136.5" width="271" height="343" rx="17.5" fill="none" stroke="url(#glassedge)"/>
+    <text x="900" y="171" class="g7" font-size="17" fill="#F4F5F7">Properties</text>
+    <text x="1132" y="171" class="mono" font-size="13" fill="#6B7184" text-anchor="end">Inspect</text>
+    <line x1="881" y1="188" x2="1151" y2="188" stroke="#FFFFFF" stroke-opacity=".08"/>
+    <g class="mono" font-size="12" fill="#6B7184" letter-spacing="1.4">
+      <text x="900" y="218">ROLE</text>
+      <text x="900" y="274">STACK</text>
+      <text x="900" y="330">FOCUS</text>
+      <text x="900" y="386">EXPLORING</text>
+      <text x="900" y="454">FILL</text>
+    </g>
+    <g class="g5" font-size="18" fill="#E6E8EE">
+      <text x="900" y="243">Full Stack Engineer</text>
+      <text x="900" y="299">React · Node · Postgres</text>
+      <text x="900" y="355">Web, mobile &amp; APIs</text>
+    </g>
+    <text x="900" y="411" class="mono" font-size="15" fill="#5BE3A8">AI engineering ✦</text>
+    <g stroke="#0A0B0F" stroke-width="2">
+      <circle cx="972"  cy="449" r="10" fill="#F4F5F7"/>
+      <circle cx="998"  cy="449" r="10" fill="#0D99FF"/>
+      <circle cx="1024" cy="449" r="10" fill="#A259FF"/>
+      <circle cx="1050" cy="449" r="10" fill="#FF4D8D"/>
+      <circle cx="1076" cy="449" r="10" fill="#3DDC97"/>
+      <circle cx="1102" cy="449" r="10" fill="#FF7A45"/>
+    </g>
+  </g>
+
+  <!-- click ring at the handle -->
+  <circle class="click" cx="708" cy="362" r="18" fill="none" stroke="#0D99FF" stroke-width="2"/>
+
+  <!-- cursor: himesh -->
+  <g class="cur-a">
+    <path d="M0 0 L0 22 L6 16.5 L10.5 26 L14 24.4 L9.6 15.2 L17 15.2 Z" fill="#0D99FF" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+    <rect x="16" y="24" width="72" height="26" rx="7" fill="#0D99FF"/>
+    <text x="52" y="42" class="g7" font-size="14" fill="#FFFFFF" text-anchor="middle">Himesh</text>
+  </g>
+
+  <!-- cursor: you -->
+  <g class="cur-b">
+    <path d="M0 0 L0 22 L6 16.5 L10.5 26 L14 24.4 L9.6 15.2 L17 15.2 Z" fill="#A259FF" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+    <rect x="16" y="24" width="46" height="26" rx="7" fill="#A259FF"/>
+    <text x="39" y="42" class="g7" font-size="14" fill="#FFFFFF" text-anchor="middle">you</text>
+  </g>
+</svg>

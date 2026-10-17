@@ -1,5 +1,5 @@
 <a href="https://himeshgunathilake.dev/">
-  <img src="./assets/hero.svg" width="100%" alt="Himesh Gunathilake — Frontend Engineer. I craft interfaces that feel instant, look sharp, and actually ship — on the web and in your pocket." />
+  <img src="./assets/hero.svg" width="100%" alt="Himesh Gunathilake — Full Stack Engineer, curious about AI. I build products end to end, from the database to the pixel, and I'm exploring what AI changes about how we build." />
 </a>
 
 <p align="center">
@@ -8,65 +8,23 @@
   <a href="mailto:himeshgunathilaka99@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hello-A259FF?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0A0B0F" alt="Email" /></a>
 </p>
 
-<br />
-
-I'm a frontend-focused software engineer from Sri Lanka. I obsess over the details most people only *feel* — the 100 ms that makes a tap feel instant, the empty state nobody designed, the layout that still holds at 320 px — and I care just as much about the architecture underneath, so the UI stays fast and easy to change.
-
-Right now I'm leading mobile delivery on **Scolaris GO** at Rightmo Web Solution, and building a few products of my own on the side.
-
-> [!TIP]
-> The header, project cards and footer on this page are pure SVG + CSS animation — no exported images, no GIFs. [Peek at the source.](./assets)
-
-## Selected work
-
-<p align="center">
-  <a href="https://himeshgunathilake.dev/"><img src="./assets/card-scolaris-go.svg" width="49%" alt="Scolaris GO — school management mobile app. Leading architecture, milestones, code reviews and app-store delivery; offline support and security. TypeScript, React Native, Expo." /></a>
-  <a href="https://himeshgunathilake.dev/"><img src="./assets/card-system-analyzer.svg" width="49%" alt="System Analyzer — a native macOS workbench that explains what your Mac is doing, not just raw stats. macOS, Apple Silicon, performance." /></a>
-</p>
-<p align="center">
-  <a href="https://himeshgunathilake.dev/"><img src="./assets/card-memonaiq.svg" width="49%" alt="MemonaIQ — an independent SaaS of focused utilities for web, infrastructure and security. Next.js, PostgreSQL, Prisma." /></a>
-  <a href="https://himeshgunathilake.dev/"><img src="./assets/card-terra-watch.svg" width="49%" alt="Terra Watch — a trail-hazard map with confidence-aware severity to help people choose safer routes. Next.js, MapLibre GL JS, PostGIS, Drizzle." /></a>
+<p>
+  <img src="./assets/about.svg" width="100%" alt="About — Database to pixel. I'm a full stack engineer from Sri Lanka. I work across the whole product — React and Next.js on the web, React Native on mobile, Node, Laravel and Postgres underneath — and I care about making it useful, maintainable and fast. Lately: what AI changes about how we build. End-to-end engineering, product thinking, architecture and ownership." />
 </p>
 
-## Toolkit
+<p>
+  <a href="https://himeshgunathilake.dev/">
+    <img src="./assets/work.svg" width="100%" alt="Selected work — Scolaris GO (shipping): school management mobile app, leading architecture and app-store delivery with offline support; TypeScript, React Native, Expo. System Analyzer (in progress): a native macOS workbench that explains what your Mac is doing. MemonaIQ (building): focused SaaS utilities for web, infrastructure and security; Next.js, PostgreSQL, Prisma. Terra Watch (concept): a trail-hazard map for safer routes; Next.js, MapLibre, PostGIS." />
+  </a>
+</p>
 
-**Where I live** — frontend & mobile
+<p>
+  <img src="./assets/toolkit.svg" width="100%" alt="Toolkit — TypeScript, JavaScript, React, Next.js, Tailwind CSS, Sass, Redux, HTML, CSS, Three.js, Figma; Node.js, Express, Laravel, PHP, Python, Java; PostgreSQL, MySQL, MongoDB, Prisma, Docker, Git, Linux, Nginx; also React Native, Expo, MapLibre GL JS, PostGIS, Drizzle. Exploring AI engineering, AI-assisted workflows, macOS tooling and performance." />
+</p>
 
-<img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,tailwind,sass,redux,html,css,threejs,figma&perline=11" alt="TypeScript, JavaScript, React, Next.js, Tailwind CSS, Sass, Redux, HTML, CSS, Three.js, Figma" />
-
-**What I build on** — backend, data & infrastructure
-
-<img src="https://skillicons.dev/icons?i=nodejs,express,laravel,php,py,java,postgres,mysql,mongodb,prisma,docker,git,linux,nginx&perline=14" alt="Node.js, Express, Laravel, PHP, Python, Java, PostgreSQL, MySQL, MongoDB, Prisma, Docker, Git, Linux, Nginx" />
-
-Plus React Native, Expo, MapLibre GL JS, PostGIS and Drizzle wherever the problem calls for them.
-
-## How I build
-
-```ts
-const himesh = {
-  role: "Frontend-focused Software Engineer",
-  basedIn: "Sri Lanka 🇱🇰",
-  shipsTo: ["web", "iOS", "Android", "macOS"],
-
-  obsessedWith: [
-    "perceived performance",
-    "motion that means something",
-    "component architecture that scales",
-  ],
-
-  principles: [
-    "Simplicity over cleverness.",
-    "Measure first, optimise second.",
-    "Reusable components, not copy-paste.",
-    "Real user value over features that only look impressive.",
-    "Sometimes the best engineering is knowing what not to build.",
-  ],
-
-  currentlyExploring: ["AI-assisted engineering", "macOS system tooling", "performance"],
-} as const;
-```
-
-## Contributions
+<p>
+  <img src="./assets/how-i-build.svg" width="100%" alt="How I build — principles: simplicity over cleverness; measure first, optimise second; reusable components, not copy-paste; real user value over features that only look impressive; sometimes the best engineering is knowing what not to build." />
+</p>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/HimeshGunathilaka/HimeshGunathilaka/output/snake-dark.svg" />
@@ -74,9 +32,10 @@ const himesh = {
   <img src="https://raw.githubusercontent.com/HimeshGunathilaka/HimeshGunathilaka/output/snake-dark.svg" width="100%" alt="A snake eating my GitHub contribution graph" />
 </picture>
 
-<br />
-<br />
+<p>
+  <a href="mailto:himeshgunathilaka99@gmail.com">
+    <img src="./assets/footer.svg" width="100%" alt="Building something ambitious? Let's take it from idea to production — together. Say hello." />
+  </a>
+</p>
 
-<a href="mailto:himeshgunathilaka99@gmail.com">
-  <img src="./assets/footer.svg" width="100%" alt="Got a hard UI problem? Let's make it feel effortless. Say hello." />
-</a>
+<p align="center"><sub>Every panel on this page is a single SVG — fonts, icons and animation included. <a href="./assets">Peek at the source.</a></sub></p>

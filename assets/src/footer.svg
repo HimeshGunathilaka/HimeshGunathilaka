@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 240" width="1200" height="240" role="img" aria-labelledby="t d">
+  <title id="t">Building something ambitious? Say hello.</title>
+  <desc id="d">A call to action over a soft aurora background: building something ambitious? Let's take it from idea to production. A cursor clicks a "Say hello" button.</desc>
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05060B"/>
+      <stop offset="1" stop-color="#0B0C1C"/>
+    </linearGradient>
+    <radialGradient id="blue"><stop offset="0" stop-color="#0D99FF" stop-opacity=".55"/><stop offset=".45" stop-color="#0D99FF" stop-opacity=".16"/><stop offset="1" stop-color="#0D99FF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="violet"><stop offset="0" stop-color="#A259FF" stop-opacity=".5"/><stop offset=".45" stop-color="#A259FF" stop-opacity=".14"/><stop offset="1" stop-color="#A259FF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="pink"><stop offset="0" stop-color="#FF4D8D" stop-opacity=".3"/><stop offset="1" stop-color="#FF4D8D" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.1" fill="#FFFFFF" fill-opacity=".07"/>
+    </pattern>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.4 -.62"/>
+    </filter>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".26"/>
+      <stop offset=".4" stop-color="#FFFFFF" stop-opacity=".05"/>
+      <stop offset="1" stop-color="#0D99FF" stop-opacity=".4"/>
+    </linearGradient>
+    <linearGradient id="btn" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2AA7FF"/>
+      <stop offset="1" stop-color="#7B5CFF"/>
+    </linearGradient>
+    <linearGradient id="btnshine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".35"/>
+      <stop offset=".5" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="serifgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8FD0FF"/>
+      <stop offset=".5" stop-color="#C9A6FF"/>
+      <stop offset="1" stop-color="#FF9CC2"/>
+    </linearGradient>
+    <clipPath id="frame"><rect width="1200" height="240" rx="28"/></clipPath>
+    <style>
+      /*@fonts*/
+      .g4 { font-family: Geist, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 400; }
+      .g7 { font-family: Geist, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 700; }
+      .g8 { font-family: Geist, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-weight: 800; }
+      .serif { font-family: "Instrument Serif", "Iowan Old Style", Georgia, serif; font-style: italic; font-weight: 400; }
+
+      .b1 { animation: d1 16s ease-in-out infinite alternate; }
+      .b2 { animation: d2 20s ease-in-out infinite alternate; }
+      .b3 { animation: d3 18s ease-in-out infinite alternate; }
+      @keyframes d1 { to { transform: translate(-140px, 30px) } }
+      @keyframes d2 { to { transform: translate(160px, -40px) } }
+      @keyframes d3 { to { transform: translate(120px, 20px) } }
+
+      .btn { transform-box: fill-box; transform-origin: center; animation: press 5s infinite; }
+      @keyframes press {
+        0%, 44%, 54%, 100% { transform: scale(1) }
+        48% { transform: scale(.94) }
+      }
+      .cur { transform: translate(1010px, 134px); animation: move 5s infinite; animation-timing-function: cubic-bezier(.65,0,.35,1); }
+      @keyframes move {
+        0%, 8%    { transform: translate(790px, 166px) }
+        40%, 60%  { transform: translate(1010px, 134px) }
+        92%, 100% { transform: translate(790px, 166px) }
+      }
+      .ring { opacity: 0; transform-box: fill-box; transform-origin: center; animation: ring 5s infinite; }
+      @keyframes ring {
+        0%, 46% { opacity: 0; transform: scale(.3) }
+        48%     { opacity: .9; transform: scale(.6) }
+        58%     { opacity: 0; transform: scale(1.8) }
+        100%    { opacity: 0 }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="240" fill="url(#base)"/>
+    <circle class="b1" cx="1060" cy="120" r="360" fill="url(#blue)"/>
+    <circle class="b2" cx="120"  cy="280" r="340" fill="url(#violet)"/>
+    <circle class="b3" cx="560"  cy="-60" r="260" fill="url(#pink)"/>
+    <rect width="1200" height="240" fill="url(#dots)"/>
+    <rect width="1200" height="240" filter="url(#grain)" opacity=".22"/>
+  </g>
+  <rect x=".75" y=".75" width="1198.5" height="238.5" rx="27.5" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+
+  <text x="64" y="112" class="g8" font-size="48" letter-spacing="-1.6" fill="#F4F5F7">Building something <tspan class="serif" font-size="58" letter-spacing="0" fill="url(#serifgrad)">ambitious?</tspan></text>
+  <text x="64" y="162" class="g4" font-size="25" fill="#A3A9BA">Let’s take it from idea to production — together.</text>
+
+  <g class="btn">
+    <rect x="852" y="90" width="268" height="64" rx="18" fill="url(#btn)"/>
+    <rect x="852" y="90" width="268" height="64" rx="18" fill="url(#btnshine)"/>
+    <rect x="852.5" y="90.5" width="267" height="63" rx="17.5" fill="none" stroke="#FFFFFF" stroke-opacity=".28"/>
+    <text x="986" y="131" class="g7" font-size="22" fill="#FFFFFF" text-anchor="middle">Say hello  →</text>
+  </g>
+  <circle class="ring" cx="1010" cy="134" r="20" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+
+  <g class="cur">
+    <path d="M0 0 L0 22 L6 16.5 L10.5 26 L14 24.4 L9.6 15.2 L17 15.2 Z" fill="#A259FF" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+    <rect x="16" y="24" width="46" height="26" rx="7" fill="#A259FF"/>
+    <text x="39" y="42" class="g7" font-size="14" fill="#FFFFFF" text-anchor="middle">you</text>
+  </g>
+</svg>
