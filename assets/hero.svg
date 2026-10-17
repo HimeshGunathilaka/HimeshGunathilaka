@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-labelledby="t d">
+  <title id="t">Himesh Gunathilake — Frontend Engineer</title>
+  <desc id="d">A design-canvas style header: the name Himesh Gunathilake selected like a layer in a design tool, live cursors moving around it, and a properties panel listing role, stack, focus and easing.</desc>
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1.5" cy="1.5" r="1.2" fill="#1C202B"/>
+    </pattern>
+    <radialGradient id="glow" cx="78%" cy="0%" r="70%">
+      <stop offset="0" stop-color="#0D99FF" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#0D99FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="0%" cy="100%" r="60%">
+      <stop offset="0" stop-color="#A259FF" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#A259FF" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="frame"><rect width="1200" height="480" rx="28"/></clipPath>
+    <style>
+      .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .mono { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+      .ease { animation-timing-function: cubic-bezier(.65,0,.35,1); }
+
+      /* name selection draws in, then stays */
+      .sel { stroke-dasharray: 1800; animation: draw 1.4s .3s cubic-bezier(.2,.8,.2,1) backwards; }
+      .handle, .dim { animation: pop .4s cubic-bezier(.2,.8,.2,1) backwards; }
+      .h1 { animation-delay: 1.2s } .h2 { animation-delay: 1.3s } .h3 { animation-delay: 1.4s } .h4 { animation-delay: 1.5s } .dim { animation-delay: 1.7s }
+      @keyframes draw { from { stroke-dashoffset: 1800 } }
+      @keyframes pop { from { opacity: 0; transform: scale(.4) } to { opacity: 1; transform: scale(1) } }
+      .handle, .dim { transform-box: fill-box; transform-origin: center; }
+
+      /* rotating "now" line */
+      .r { opacity: 0; animation: cycle 16s infinite both; }
+      .r1 { opacity: 1; }
+      .r2 { animation-delay: 4s } .r3 { animation-delay: 8s } .r4 { animation-delay: 12s }
+      @keyframes cycle {
+        0%   { opacity: 0; transform: translateY(10px) }
+        3%   { opacity: 1; transform: translateY(0) }
+        22%  { opacity: 1; transform: translateY(0) }
+        25%  { opacity: 0; transform: translateY(-10px) }
+        100% { opacity: 0; transform: translateY(-10px) }
+      }
+      .caret { animation: blink 1.1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0 } }
+
+      /* multiplayer cursors */
+      .cur-a { transform: translate(838px, 284px); animation: travelA 11s infinite; animation-timing-function: cubic-bezier(.65,0,.35,1); }
+      @keyframes travelA {
+        0%, 6%    { transform: translate(730px, 416px) }
+        24%, 38%  { transform: translate(838px, 284px) }
+        56%, 66%  { transform: translate(1062px, 212px) }
+        84%, 100% { transform: translate(730px, 416px) }
+      }
+      .click { opacity: 0; transform-box: fill-box; transform-origin: center; animation: ring 11s infinite; }
+      @keyframes ring {
+        0%, 25% { opacity: 0; transform: scale(.2) }
+        27%     { opacity: .9; transform: scale(.6) }
+        34%     { opacity: 0; transform: scale(1.6) }
+        100%    { opacity: 0; transform: scale(1.6) }
+      }
+      .cur-b { transform: translate(630px, 70px); animation: travelB 9s infinite alternate; animation-timing-function: cubic-bezier(.45,0,.55,1); }
+      @keyframes travelB {
+        0%   { transform: translate(560px, 70px) }
+        50%  { transform: translate(700px, 92px) }
+        100% { transform: translate(630px, 62px) }
+      }
+      .live { animation: live 2.4s ease-in-out infinite; }
+      @keyframes live { 50% { opacity: .35 } }
+
+      @media (prefers-reduced-motion: reduce) {
+        *, .r { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="480" fill="#0A0B0F"/>
+    <rect width="1200" height="480" fill="url(#dots)"/>
+    <rect width="1200" height="480" fill="url(#glow)"/>
+    <rect width="1200" height="480" fill="url(#glow2)"/>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="479" rx="28" fill="none" stroke="#1D212C"/>
+
+  <!-- canvas chrome -->
+  <g class="mono" font-size="15" fill="#6B7184">
+    <text x="48" y="54"><tspan fill="#0D99FF">#</tspan> hero.tsx <tspan fill="#3A3F4E">—</tspan> 1200 × 480</text>
+    <text x="1152" y="54" text-anchor="end"><tspan class="live" fill="#3DDC97">●</tspan> Sri Lanka · UTC+05:30</text>
+  </g>
+
+  <!-- kicker -->
+  <text x="80" y="150" class="mono" font-size="24" fill="#5D6375">&lt;<tspan fill="#0D99FF">FrontendEngineer</tspan> <tspan fill="#A259FF">craft</tspan>=<tspan fill="#3DDC97">"obsessive"</tspan> /&gt;</text>
+
+  <!-- name, selected like a layer -->
+  <text x="80" y="250" class="sans" font-size="84" font-weight="800" fill="#F4F5F7" textLength="740" lengthAdjust="spacing">Himesh Gunathilake</text>
+  <rect class="sel" x="64" y="172" width="772" height="110" fill="none" stroke="#0D99FF" stroke-width="1.5"/>
+  <g fill="#FFFFFF" stroke="#0D99FF" stroke-width="1.5">
+    <rect class="handle h1" x="59" y="167" width="10" height="10"/>
+    <rect class="handle h2" x="831" y="167" width="10" height="10"/>
+    <rect class="handle h3" x="831" y="277" width="10" height="10"/>
+    <rect class="handle h4" x="59" y="277" width="10" height="10"/>
+  </g>
+  <g class="dim">
+    <rect x="404" y="294" width="92" height="24" rx="5" fill="#0D99FF"/>
+    <text x="450" y="311" class="mono" font-size="13" fill="#FFFFFF" text-anchor="middle">772 × 110</text>
+  </g>
+
+  <!-- tagline -->
+  <g class="sans" font-size="25" fill="#9AA0B1">
+    <text x="80" y="368">I craft interfaces that <tspan fill="#F4F5F7" font-weight="600">feel instant</tspan>, <tspan fill="#F4F5F7" font-weight="600">look sharp</tspan>,</text>
+    <text x="80" y="402">and actually <tspan fill="#F4F5F7" font-weight="600">ship</tspan> — on the web and in your pocket.</text>
+  </g>
+
+  <!-- rotating "now" -->
+  <g class="mono" font-size="18">
+    <text x="80" y="446" fill="#5D6375">▸ now:</text>
+    <g fill="#3DDC97">
+      <text class="r r1" x="160" y="446">leading mobile delivery on Scolaris GO</text>
+      <text class="r r2" x="160" y="446">building a native macOS system analyzer</text>
+      <text class="r r3" x="160" y="446">mapping trail hazards with MapLibre + PostGIS</text>
+      <text class="r r4" x="160" y="446">exploring AI-assisted engineering workflows</text>
+    </g>
+  </g>
+
+  <!-- properties panel -->
+  <g>
+    <rect x="880" y="96" width="272" height="344" rx="16" fill="#101219" stroke="#232734"/>
+    <text x="900" y="131" class="sans" font-size="17" font-weight="700" fill="#F4F5F7">Properties</text>
+    <text x="1132" y="131" class="mono" font-size="13" fill="#5D6375" text-anchor="end">Inspect</text>
+    <line x1="881" y1="148" x2="1151" y2="148" stroke="#232734"/>
+    <g class="mono" font-size="13" fill="#5D6375" letter-spacing="1.2">
+      <text x="900" y="178">ROLE</text>
+      <text x="900" y="234">STACK</text>
+      <text x="900" y="290">FOCUS</text>
+      <text x="900" y="346">EASING</text>
+      <text x="900" y="414">FILL</text>
+    </g>
+    <g class="sans" font-size="18" fill="#E6E8EE">
+      <text x="900" y="203">Frontend Engineer</text>
+      <text x="900" y="259">React · Next.js · Expo</text>
+      <text x="900" y="315">UI architecture &amp; UX</text>
+    </g>
+    <text x="900" y="371" class="mono" font-size="15" fill="#3DDC97">cubic-bezier(.2,.8,.2,1)</text>
+    <g stroke="#0A0B0F" stroke-width="2">
+      <circle cx="972"  cy="409" r="10" fill="#F4F5F7"/>
+      <circle cx="998"  cy="409" r="10" fill="#0D99FF"/>
+      <circle cx="1024" cy="409" r="10" fill="#A259FF"/>
+      <circle cx="1050" cy="409" r="10" fill="#3DDC97"/>
+      <circle cx="1076" cy="409" r="10" fill="#FF7A45"/>
+      <circle cx="1102" cy="409" r="10" fill="#1C202B"/>
+    </g>
+  </g>
+
+  <!-- click ring at the handle -->
+  <circle class="click" cx="836" cy="282" r="18" fill="none" stroke="#0D99FF" stroke-width="2"/>
+
+  <!-- cursor: himesh -->
+  <g class="cur-a">
+    <path d="M0 0 L0 22 L6 16.5 L10.5 26 L14 24.4 L9.6 15.2 L17 15.2 Z" fill="#0D99FF" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+    <rect x="16" y="24" width="72" height="26" rx="7" fill="#0D99FF"/>
+    <text x="52" y="42" class="sans" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">Himesh</text>
+  </g>
+
+  <!-- cursor: you -->
+  <g class="cur-b">
+    <path d="M0 0 L0 22 L6 16.5 L10.5 26 L14 24.4 L9.6 15.2 L17 15.2 Z" fill="#A259FF" stroke="#FFFFFF" stroke-width="1.5" stroke-linejoin="round"/>
+    <rect x="16" y="24" width="46" height="26" rx="7" fill="#A259FF"/>
+    <text x="39" y="42" class="sans" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">you</text>
+  </g>
+</svg>
