@@ -15,21 +15,19 @@ W = 1200
 
 # css class -> (family, weight, style, file)
 FACES = {
-    "g4": ("Geist", 400, "normal", "geist-400.woff2"),
-    "g5": ("Geist", 500, "normal", "geist-500.woff2"),
-    "g7": ("Geist", 700, "normal", "geist-700.woff2"),
-    "g8": ("Geist", 800, "normal", "geist-800.woff2"),
+    "g4": ("Manrope", 400, "normal", "manrope-400.woff2"),
+    "g5": ("Manrope", 500, "normal", "manrope-500.woff2"),
+    "g7": ("Manrope", 700, "normal", "manrope-700.woff2"),
+    "g8": ("Manrope", 800, "normal", "manrope-800.woff2"),
     "mono": ("Geist Mono", 400, "normal", "geist-mono-400.woff2"),
-    "serif": ("Instrument Serif", 400, "italic", "instrument-serif-italic.woff2"),
 }
-SANS = 'Geist, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
+SANS = 'Manrope, Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif'
 CLASS_CSS = "\n      ".join([
     f".g4 {{ font-family: {SANS}; font-weight: 400; }}",
     f".g5 {{ font-family: {SANS}; font-weight: 500; }}",
     f".g7 {{ font-family: {SANS}; font-weight: 700; }}",
     f".g8 {{ font-family: {SANS}; font-weight: 800; }}",
     '.mono { font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 400; }',
-    '.serif { font-family: "Instrument Serif", "Iowan Old Style", Georgia, serif; font-style: italic; font-weight: 400; }',
 ])
 
 
@@ -57,7 +55,7 @@ PALETTE = {"blue": "#0D99FF", "violet": "#A259FF", "pink": "#FF4D8D", "mint": "#
 
 
 def panel(h, blobs, body, title, desc, css=""):
-    """A full-width rounded panel: gradient base, drifting aurora, dot grid, grain, glass edge."""
+    """A full-width rounded panel: gradient base, drifting aurora, vignette, glass edge."""
     grads, circles, anims = [], [], []
     for i, (color, cx, cy, r, a, dx, dy, dur) in enumerate(blobs):
         hexc = PALETTE[color]
@@ -81,13 +79,6 @@ def panel(h, blobs, body, title, desc, css=""):
     <radialGradient id="vignette" cx="45%" cy="45%" r="80%">
       <stop offset=".6" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/>
     </radialGradient>
-    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="1.5" cy="1.5" r="1.1" fill="#FFFFFF" fill-opacity=".07"/>
-    </pattern>
-    <filter id="grain" x="0" y="0" width="100%" height="100%">
-      <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/>
-      <feColorMatrix values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.4 -.62"/>
-    </filter>
     <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#FFFFFF" stop-opacity=".26"/><stop offset=".4" stop-color="#FFFFFF" stop-opacity=".05"/>
       <stop offset=".75" stop-color="#FFFFFF" stop-opacity=".04"/><stop offset="1" stop-color="#A259FF" stop-opacity=".35"/>
@@ -113,8 +104,6 @@ def panel(h, blobs, body, title, desc, css=""):
   <g clip-path="url(#frame)">
     <rect width="{W}" height="{h}" fill="url(#base)"/>
     {nl.join(circles)}
-    <rect width="{W}" height="{h}" fill="url(#dots)"/>
-    <rect width="{W}" height="{h}" filter="url(#grain)" opacity=".22"/>
     <rect width="{W}" height="{h}" fill="url(#vignette)"/>
   </g>
   <rect x=".75" y=".75" width="{W - 1.5}" height="{h - 1.5}" rx="27.5" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
@@ -127,7 +116,7 @@ def heading(index, label, plain, fancy, color="#4DB5FF"):
     """Section label + mixed grotesk/serif headline, shared by every panel."""
     return f"""
   <text x="64" y="76" class="mono" font-size="15" fill="{color}" letter-spacing="1.5">{index} <tspan fill="#4A5063">/</tspan> {label}</text>
-  <text x="62" y="140" class="g8" font-size="50" letter-spacing="-1.6" fill="#F4F5F7">{plain} <tspan class="serif" font-size="60" letter-spacing="0" fill="url(#serifgrad)">{fancy}</tspan></text>"""
+  <text x="62" y="140" class="g8" font-size="50" letter-spacing="-1.6" fill="#F4F5F7">{plain} <tspan fill="url(#serifgrad)">{fancy}</tspan></text>"""
 
 
 def glass(x, y, w, h, rx=16):
@@ -203,7 +192,7 @@ ILLUSTRATIONS = {
   <circle cx="494" cy="104" r="54" fill="none" stroke="#1C202B" stroke-width="10"/>
   <circle class="arc" cx="494" cy="104" r="54" fill="none" stroke="{accent}" stroke-width="10" stroke-linecap="round" pathLength="100" stroke-dasharray="62 100" transform="rotate(-90 494 104)"/>
   <text x="494" y="100" class="mono" font-size="12" fill="#6B7184" text-anchor="middle" letter-spacing="1">CPU</text>
-  <text x="494" y="124" class="serif" font-size="22" fill="{accent}" text-anchor="middle">calm</text>
+  <text x="494" y="122" class="g8" font-size="16" fill="{accent}" text-anchor="middle">calm</text>
   <rect x="426" y="182" width="140" height="62" rx="12" fill="#08090D" stroke="#20232D"/>
   <path class="spark" d="M436 228 L452 220 L466 224 L480 206 L494 214 L508 198 L522 210 L536 202 L556 208" fill="none" stroke="{accent}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="100"/>
   <circle class="blip" cx="556" cy="208" r="4" fill="{accent}"/>""",
@@ -320,7 +309,7 @@ def card(c, tx, ty, s):
   <rect x="32" y="34" width="{status_w}" height="28" rx="14" fill="{a}" fill-opacity=".12" stroke="{a}" stroke-opacity=".35"/>
   <circle class="dot" cx="48" cy="48" r="4" fill="{a}"/>
   <text x="60" y="53" class="mono" font-size="13" fill="{a}" letter-spacing="1.2">{c['status']}</text>
-  <text x="30" y="126" class="serif" font-size="54" fill="#FFFFFF">{c['title']}</text>
+  <text x="31" y="122" class="g8" font-size="42" letter-spacing="-1.2" fill="#FFFFFF">{c['title']}</text>
   <text x="32" y="156" class="mono" font-size="14" fill="#6B7184">{c['meta']}</text>
   <g class="g4" font-size="18" fill="#AEB3C2">
     {desc}
