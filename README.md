@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://himeshgunathilake.dev/"><img src="https://img.shields.io/badge/Portfolio-himeshgunathilake.dev-0D99FF?style=for-the-badge&logo=googlechrome&logoColor=white&labelColor=0A0B0F" alt="Portfolio" /></a>
-  <a href="https://linkedin.com/in/himesh-gunathilaka-bb4818258"><img src="https://img.shields.io/badge/LinkedIn-Connect-0D99FF?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A0B0F" alt="LinkedIn" /></a>
+  <a href="www.linkedin.com/in/himeshgunathilake"><img src="https://img.shields.io/badge/LinkedIn-Connect-0D99FF?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A0B0F" alt="LinkedIn" /></a>
   <a href="mailto:himeshgunathilaka99@gmail.com"><img src="https://img.shields.io/badge/Email-Say%20hello-A259FF?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0A0B0F" alt="Email" /></a>
 </p>
 
